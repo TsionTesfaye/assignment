@@ -7,8 +7,10 @@ import { DataProvider } from '../state/DataContext';
 function App() {
   return (
     <DataProvider>
-      <nav style={{padding: 16, borderBottom: '1px solid #ddd'}}>
-        <Link to="/">Items</Link>
+      <nav>
+        <div className="container">
+          <Link to="/">Items</Link>
+        </div>
       </nav>
       <Routes>
         <Route path="/" element={<Items />} />
